@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core>=4.2,<5"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "abusezero"
+version = "0.1.0"
+description = "The official AbuseZero Python SDK: abuse prevention API for SaaS."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LicenseRef-AbuseZero-SDK"
+license-files = ["LICENSE"]
+authors = [{ name = "AbuseZero" }]
+dependencies = ["httpx>=0.28,<1"]
+
+[project.urls]
+Homepage = "https://abusezero.com"
+Documentation = "https://docs.abusezero.com/docs/tools/python-sdk"
+Source = "https://github.com/abusezero/abusezero-python"
+
+[tool.flit.sdist]
+include = ["API.md", "THIRD-PARTY-NOTICES", "examples/"]

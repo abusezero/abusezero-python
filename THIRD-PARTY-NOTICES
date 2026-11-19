@@ -1,0 +1,1 @@
+This package uses HTTPX, distributed separately under its BSD-3-Clause license. Its dependencies and license notices are installed by pip. No HTTPX source is bundled.
